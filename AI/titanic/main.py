@@ -3,7 +3,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 df = pd.read_csv('train.csv')
-
+print(df)
 # print(df['Survived'].value_counts())
 
 df['Survived'] = df['Survived'].replace(0,'Perish')
