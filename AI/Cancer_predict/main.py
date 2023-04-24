@@ -38,6 +38,7 @@ X_train,X_test,Y_train,Y_test = train_test_split(X,Y,test_size=0.1,random_state=
 
 
 
+
 model1 = DecisionTreeClassifier()
 model1.fit(X_train,Y_train)
 print(model1.score(X_test,Y_test))
