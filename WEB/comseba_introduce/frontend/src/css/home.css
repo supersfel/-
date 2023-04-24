@@ -1,0 +1,82 @@
+/* home.css */
+@import url("./reset.css");
+@import url("./common.css");
+
+/**/
+/* 헤더 영역 */
+/**/
+.home__header {
+  display: flex;
+  justify-content: space-between; /* 요소를 좌,우로 정렬 */
+}
+
+.home__header__right {
+  /* 헤더의 오른쪽 부분 */
+  display: flex;
+  align-items: center;
+  gap: 20px; /* flex 요소간의 간격을 정해줄 수 있다.*/
+}
+
+.home__header__right a {
+  color: var(--main-color);
+}
+
+/**/
+/* 학원 소개 영역 */
+/**/
+
+.home__intro {
+  display: flex;
+  justify-content: space-between;
+  position: relative; /* position-absolute가 있기때문에 설정 */
+  margin-top: 5rem;
+}
+
+.home__intro__left {
+  width: 50%; /* 50% 크기로 왼쪽,오른쪽을 설정하기 위함*/
+}
+
+.home__intro__left__text {
+  color: var(--main-color);
+}
+
+.home__intro__left__text p:nth-child(2) {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+
+.home__intro__left__rink-btn {
+  margin-top: 2rem;
+  padding: 0.5rem 1rem; /* 좌우:0.5 , 상하 1 padding 부여*/
+  cursor: pointer;
+}
+
+.home__intro__left__sns {
+  position: absolute; /* sns관련 부분을 항상 왼쪽하단에 고정 */
+  /* 왼쪽하단의 기준이 부모가 position : relative된 부분임 */
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 150px; /* sns의 크기를 고정적으로 설정 */
+}
+
+.home__intro__left__sns p {
+  font-size: 40px;
+  color: var(--main-color);
+  font-weight: 700; /* font의 굵기 설정*/
+}
+
+.home__intro__left__sns img {
+  cursor: pointer; /* 이미지에 마우스를 가져다 대면 커서모양이 변겨오디ㅔㄱ */
+}
+
+.home__intro__right {
+  width: 50%;
+}
+
+.home__intro__right img {
+  width: 100%; /* 이미지의 크기를 유동적으로 설정하기 위함*/
+}
