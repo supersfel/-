@@ -80,3 +80,171 @@
 .home__intro__right img {
   width: 100%; /* 이미지의 크기를 유동적으로 설정하기 위함*/
 }
+
+/* home-설명 부분 */
+.home__description {
+  text-align: center; /* TEXT를 가운데 정렬해주는 옵션*/
+  color: var(--main-color);
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.home__description p:nth-of-type(1) {
+  /* p태그의 첫번째에 css 적용 */
+  margin-top: 3rem;
+  font-size: 48px;
+  font-weight: 900;
+}
+.home__description span:nth-of-type(2) {
+  /* span태그의 두번째 값 */
+  color: var(--dark-gray); /* ACADEMY의 글씨 색상 변경 */
+}
+
+.home__description p:nth-of-type(n) {
+  /* n으로 두면 p태그 모두가 설정된다. (p만쓰는 것과 같은 동작원리)*/
+  margin-top: 3rem;
+}
+
+.home__description p:nth-of-type(8) {
+  margin-top: 8rem;
+}
+
+.home__description p:nth-of-type(9) {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.home__description span.bold {
+  /* 중간중간 굵게 만들어줄 css
+  */
+  font-weight: 700;
+  color: var(--dark-gray);
+}
+
+.home__description__logo-container {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background-color: var(--logo-background);
+
+  margin-top: 10rem;
+}
+
+.home__description__logo {
+  color: white;
+  font-size: 100px;
+  margin-top: 15px;
+  font-weight: 900;
+}
+
+/* learn-skills */
+.home__learn-skills__title {
+  color: var(--dark-gray);
+  margin-top: 20rem;
+}
+
+.home__learn-skills__title .bold {
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.home__learn-skills__title__flex-box {
+  display: flex;
+  color: var(--main-color);
+}
+
+.home__learn-skills__container {
+  width: 70%;
+  margin: 5rem auto;
+  border: 1px solid var(--dark-gray);
+  border-radius: 10px; /* 테두리를 원처럼 보여주게 하는 속성 */
+  padding: 3rem;
+  position: relative;
+}
+
+/* 스킬 선택 */
+.home__learn-skills__select-skill {
+  width: 50%;
+  position: absolute; /* 요소를 부모요소를 기준으로 띄우기 위함*/
+  top: -25px; /* box의 크기가 50px이므로 선에 딱 걸치도록*/
+  display: flex; /* 요소들 정렬을 위함 */
+  justify-content: space-between; /* 박스들에게 적당한 여백을 주고 정렬 */
+}
+
+.home__learn-skills__skill-box {
+  display: flex; /* 글씨 중앙정렬 */
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 50px;
+  border-radius: 10px;
+  background-color: var(--soft-grey);
+  color: black;
+  font-weight: 700;
+  cursor: pointer; /* 커서모양 변경 */
+}
+
+.home__learn-skills__skill-box:hover {
+  /* HOVER시 색이 변동되도록*/
+  background-color: var(--dark-gray);
+  color: white;
+}
+
+.home__learn-skills__select-skill .selected /* 현재 선택된 영역 */ {
+  color: white;
+  background-color: var(--dark-gray);
+}
+
+.home__learn-skills__flex-box {
+  display: flex;
+  justify-content: space-around; /* 요소를 가로로 유연하게 정렬*/
+}
+
+.home__learn-skills__flex-box:last-child {
+  align-items: flex-end; /* 요소를 아래로 정렬 */
+  margin-top: -2rem; /* 박스가 겹쳐 보이게끔 -값을 마진을 준다. */
+}
+
+.home__learn-skills__step {
+  width: 20%;
+  border-radius: 20px; /* 테두리를 원처럼 보여주게 하는 속성 */
+  color: white;
+  padding: 2rem;
+}
+
+.home__learn-skills__step p:first-child {
+  margin-bottom: 2rem;
+}
+
+.home__learn-skills__flex-box .step1 {
+  height: 100px;
+  background-color: var(--dark-gray);
+}
+
+.home__learn-skills__flex-box .step2 {
+  height: 160px;
+  background-color: var(--main-color);
+}
+
+.home__learn-skills__flex-box .step3 {
+  height: 100px;
+  background-color: var(--soft-grey);
+  color: black;
+}
+
+.home__learn-skills__flex-box .step4 {
+  height: 160px;
+  background-color: var(--soft-grey);
+  color: black;
+}
+.home__learn-skills__flex-box .step5 {
+  height: 100px;
+  background-color: var(--dark-gray);
+}
+.home__learn-skills__flex-box .step6 {
+  height: 160px;
+  background-color: var(--main-color);
+}
