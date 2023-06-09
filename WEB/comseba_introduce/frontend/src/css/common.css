@@ -1,7 +1,6 @@
 /* common.css */
 
 body {
-  padding: 0 10%; /* body태그에 좌우 여백 부여*/
   margin-top: 2rem; /* 위쪽으로 margin 부여 */
 }
 
@@ -22,4 +21,6 @@ a {
   --dark-gray: #263138;
   --logo-background: #343434;
   --soft-grey: #dfdfdf;
+  --footer-back: #ededed;
+  --footer-font: #a4a4a4;
 }

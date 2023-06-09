@@ -5,6 +5,10 @@
 /**/
 /* 헤더 영역 */
 /**/
+.home {
+  padding: 0 10%; /* body태그에 좌우 여백 부여*/
+}
+
 .home__header {
   display: flex;
   justify-content: space-between; /* 요소를 좌,우로 정렬 */
@@ -141,6 +145,40 @@
 }
 
 /* learn-skills */
+.home__learn-skills__list {
+}
+.home__learn-skills__list__title {
+  display: flex;
+  justify-content: center;
+  margin-top: 20rem;
+  margin-bottom: 10rem;
+  color: var(--main-color);
+  font-weight: 900;
+  font-size: 50px;
+}
+.home__learn-skills__list__flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.home__learn-skills__list__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.home__learn-skills__list__box p {
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: var(--main-color);
+  margin-bottom: 1rem;
+}
+
+.home__learn-skills__list__box img {
+  width: 150px;
+}
 .home__learn-skills__title {
   color: var(--dark-gray);
   margin-top: 20rem;
@@ -247,4 +285,108 @@
 .home__learn-skills__flex-box .step6 {
   height: 160px;
   background-color: var(--main-color);
+}
+
+/* ICON AREA */
+
+.home__icon-area__title {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  font-weight: 900;
+  margin-top: 10rem;
+}
+.home__icon-area__title span:nth-of-type(2) {
+  color: var(--main-color);
+}
+
+.home__icon__subtitle {
+  display: flex;
+  justify-content: center;
+  font-size: 26px;
+  margin-top: 10rem;
+  font-weight: 900;
+}
+
+.home__icon__subtitle span:nth-of-type(1) {
+  color: var(--main-color);
+}
+
+.home__icon__icon-box {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  margin-top: 3rem;
+}
+
+.home__icon__icon-box img {
+  width: 100px;
+}
+
+/* REASON AREA*/
+.home__why {
+  margin-top: 20rem;
+}
+
+.home__why__title {
+  width: 300px;
+  margin-left: auto;
+}
+
+.home__why__title p:nth-of-type(1) {
+  font-size: 50px;
+  font-weight: 900;
+  color: var(--main-color);
+}
+
+.home__why__title p:nth-of-type(2) {
+  display: flex;
+  justify-content: right;
+  font-size: 50px;
+  font-weight: 900;
+}
+.home__why__title p:nth-of-type(3),
+.home__why__title p:nth-of-type(4) {
+  font-size: 20px;
+  display: flex;
+  justify-content: right;
+  color: var(--main-color);
+}
+
+.home__why__box-container {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.home__why__box {
+  border-radius: 20px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home__why__box:nth-child(2n-1) {
+  background-color: var(--dark-gray);
+}
+
+.home__why__box:nth-child(2n) {
+  background-color: var(--main-color);
+}
+
+.home__why__box img {
+  width: 200px;
+}
+
+.footer {
+  margin-top: 20rem;
+  padding: 4rem 2rem;
+  background-color: var(--footer-back);
+  color: var(--footer-font);
+}
+
+.footer p:first-of-type {
+  margin-bottom: 3rem;
 }
