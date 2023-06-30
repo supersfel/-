@@ -30,12 +30,19 @@ app.get("/guest", (req, res) => {
   //서버 페이지가 들어오는 경우 guestBook에 연결
 });
 
+app.get("/map", (req, res) => {
+  res.sendFile(__dirname + "/frontend/src/html/map.html");
+  //서버 페이지가 들어오는 경우 guestBook에 연결
+});
+
 app.get("/comment", (req, res) => {
   const db = JSON.parse(fs.readFileSync("DB.json"));
   //readFile을 활용하면 버퍼 형태로 값을 가져오는데, JSON.parse로 감싸주면서 이를 json형태로 바꿔준다.
   res.json(db);
   //받아온 json을 그대로 전송해준다.
 });
+
+app.get("/map");
 
 app.post("/createcomment", (req, res) => {
   const data = req.body;
