@@ -65,7 +65,8 @@ const makeComment = async () => {
     //배우진 않았지만 ...(스프레드 연산자)를 활용해서 넣어주면 해당 값들로 date객체를 만들 수 있다.
     const curTime = new Date(); // 현재 시간을 가져온다.
 
-    const timeStr = elapsedTime(time, curTime);
+    const timeStr = elapsedTime(curTime, time);
+    console.log(time);
 
     return `<div class="guest__comment">
     <div class="guest__comment__left">
@@ -100,9 +101,7 @@ commentBtn.addEventListener("click", async (e) => {
   //input과 text-area부분을 선택
 
   const time = new Date();
-  const timeStr = `${time.getFullYear()}-${
-    time.getMonth() + 1
-  }-${time.getDate()}-${time.getHours()}-${time.getMinutes()}-${time.getSeconds()}`;
+  const timeStr = `${time.getFullYear()}-${time.getMonth()}-${time.getDate()}-${time.getHours()}-${time.getMinutes()}-${time.getSeconds()}`;
   //시간을 Date객체가 아닌, 문자열 형태로 저장하기 위함
 
   console.log(name.value, comment.value, timeStr);
