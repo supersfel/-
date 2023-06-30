@@ -1,5 +1,11 @@
 //map.js
 
+const header = document.querySelector(".map__header");
+
+header.addEventListener("click", () => {
+  window.location.href = "/";
+});
+
 //map의 옵션을 정해준다.
 const mapOptions = {
   center: new naver.maps.LatLng(37.3980292, 126.6438333),

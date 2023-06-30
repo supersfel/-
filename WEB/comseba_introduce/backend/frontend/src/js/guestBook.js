@@ -1,4 +1,10 @@
 /* guestBook.js */
+const header = document.querySelector(".guest__header");
+
+header.addEventListener("click", () => {
+  window.location.href = "/";
+});
+
 async function getComment() {
   const response = await fetch("http://localhost:3000/comment");
   const jsonData = await response.json();
@@ -65,7 +71,7 @@ const makeComment = async () => {
     //배우진 않았지만 ...(스프레드 연산자)를 활용해서 넣어주면 해당 값들로 date객체를 만들 수 있다.
     const curTime = new Date(); // 현재 시간을 가져온다.
 
-    const timeStr = elapsedTime(curTime, time);
+    const timeStr = elapsedTime(time, curTime);
     console.log(time);
 
     return `<div class="guest__comment">

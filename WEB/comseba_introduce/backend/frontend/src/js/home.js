@@ -1,4 +1,9 @@
-console.log("in");
+const header = document.querySelector(".home__header");
+
+header.addEventListener("click", () => {
+  window.location.href = "/";
+});
+
 const moveComsebaPage = () => {
   window.location.href = "http://www.comseba.co.kr/";
 };

@@ -14,6 +14,10 @@
   justify-content: space-between; /* 요소를 좌,우로 정렬 */
 }
 
+.home__header img {
+  cursor: pointer;
+}
+
 .home__header__right {
   /* 헤더의 오른쪽 부분 */
   display: flex;
